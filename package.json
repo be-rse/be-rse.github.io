@@ -1,0 +1,25 @@
+{
+  "name": "be-rse.github.io",
+  "version": "1.0.0",
+  "description": "be-rse.org website",
+  "scripts": {
+    "build-styles": "parcel build styles/styles.css --dist-dir static/styles --no-source-maps",
+    "watch-styles": "parcel watch styles/styles.css --dist-dir static/styles --no-hmr --no-source-maps",
+    "start": "docker run -u \"$(id -u):$(id -g)\" -v $PWD:/app --workdir /app -p 8080:8080 -p 1024:1024 balthek/zola:0.13.0 serve --interface 0.0.0.0 --port 8080 --base-url localhost",
+    "build": "docker run -u \"$(id -u):$(id -g)\" -v $PWD:/app --workdir /app balthek/zola:0.13.0 build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/be-rse/be-rse.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/be-rse/be-rse.github.io/issues"
+  },
+  "homepage": "https://be-rse.org",
+  "devDependencies": {
+    "parcel": "*",
+    "tailwindcss": "^2.1.2"
+  }
+}

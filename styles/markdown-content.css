@@ -1,0 +1,19 @@
+.markdown-content {
+    @apply font-sans;
+}
+
+.markdown-content p {
+    @apply mb-5;
+}
+
+.markdown-content a {
+    @apply text-black underline;
+}
+
+.markdown-content h1 {
+    @apply font-bold text-4xl;
+}
+
+.markdown-content h2 {
+    @apply font-bold text-2xl;
+}

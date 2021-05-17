@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_header %}{{ section.title }}{% endblock page_header %}
+
+{% block content %}
+<article class="mx-auto bg-white">
+  <h1>Section!</h1>
+  {{ section.content | safe }}
+</article>
+{% endblock content %}
