@@ -10,7 +10,7 @@ The aim of the Belgium Research Software Engineers community is to **foster a co
 
 ## Chat
 
-Join the (informal) chats of the Belgium Research Software Engineers community on [Gitter](https://gitter.im/be-rse/).
+Join the (informal) chats of the Belgium Research Software Engineers community on [Matrix](https://matrix.to/#/#be-rse_community:gitter.im).
 
 ## Twitter
 
