@@ -1,0 +1,5 @@
+{%- extends "base.html" %}
+
+{%- block content %}
+{{ content::process(page=page) | safe }}
+{%- endblock content %}
