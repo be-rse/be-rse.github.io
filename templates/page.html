@@ -1,5 +1,7 @@
 {%- extends "base.html" %}
 
+{% block page_header %}{{ page.title }}{% endblock page_header %}
+
 {%- block content %}
-{{ content::process(page=page) | safe }}
+{{ page.content | safe }}
 {%- endblock content %}
