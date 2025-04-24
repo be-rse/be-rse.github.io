@@ -17,3 +17,7 @@
 .markdown-content h2 {
     @apply font-bold text-2xl;
 }
+
+.markdown-content ul {
+    @apply list-none md:list-disc;
+}
