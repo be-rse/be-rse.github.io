@@ -1,6 +1,8 @@
-module.exports = {
-  purge: ["./templates/**/*.html", "./theme/**/*.html"],
-  theme: {},
-  variants: {},
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./templates/**/*.html", "./theme/**/*.html"],
+  theme: {
+    extend: {},
+  },
   plugins: [],
 };
