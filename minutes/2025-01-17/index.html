@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>Belgium RSE</title>
+
+    <link href="https://be-rse.org/styles/styles.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    
+    
+  </head>
+  <body>
+    <header x-data="{ mobileMenuOpen : false }" class="sticky top-0 flex flex-wrap flex-row justify-between items-center md:space-x-4 bg-white py-6 px-6 relative bg-cover" style="background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCA1MDQuMjk1ODQgMTU1LjMxMDQxJz48ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg4Mi43NDQ0NjEsLTIyLjIwMDg0OCknPjxwYXRoIHN0eWxlPSdmaWxsOiMyZDkzOTgnIGQ9J20gLTgyLjc0NDQ2MSwyMi4yMDA4NDggLTAuMDIwNDcsNDAuOTA3MDI4IDQ3Ljc1MjM1Nyw4Mi4zNTU0NDQgMjQuNTM1ODc2LC0xMjMuMzEzOTMxIHonLz48cGF0aCBzdHlsZT0nZmlsbDojMmI4YzkyJyBkPSdtIC04Mi44MjgwMiwxNTEuMDA0OTggNDcuODE1NDQ1LC01LjU0MTY2IC00Ny43NTIzNTYsLTgyLjM1NTQ0NCB6Jy8+PHBhdGggc3R5bGU9J2ZpbGw6IzI5ODE4NicgZD0nbSAtODIuNzQ0NDYxLDE3Ny41MTEyNSAtMC4wODM1NiwtMjYuNTA2MjcgNDcuODE1NDQ1LC01LjU0MTY2IDQyLjIwODM4ODQsMzEuOTg2NTcgeicvPjxwYXRoIHN0eWxlPSdmaWxsOiMyYjhjOTInIGQ9J00gNzAuNjYwNzY2LDE3Ny42ODI5NCA0OS45NzU3ODcsMTI4LjEyODM1IC0zNS4wMTI1NzgsMTQ1LjQ2MzMyIDcuMTk1ODEwNywxNzcuNDQ5ODkgWicvPjxwYXRoIHN0eWxlPSdmaWxsOiMyZjlhOWQnIGQ9J20gNDkuOTc1Nzg0LDEyOC4xMjgzNSAtODQuOTg4MzYyLDE3LjMzNDk3IDI0LjUzNTg3OSwtMTIzLjMxMzkzMSAyMi45OTE1NjksMC4wNTk5IHonLz48cGF0aCBzdHlsZT0nZmlsbDojMzBhMmE0JyBkPSdNIDEyLjUxNDg3LDIyLjIwOTI4OSA2Mi4xODE1MzIsMjIuMTQzNjU2IDE1Mi44NTM1NCw3Ni44ODc0NjUgNDkuOTc1NzgxLDEyOC4xMjgzNSBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzJmOTY5YycgZD0nbSA0OS45NzU3ODQsMTI4LjEyODM1IDIwLjY4NDk3OSw0OS41NTQ1OSA1Mi4zNjE4OTcsLTAuMDI1IDI5LjgzMDg4LC0xMDAuNzcwNTA4IHonLz48cGF0aCBzdHlsZT0nZmlsbDojMmQ5NTliJyBkPSdtIDEyMy4wMjI2NiwxNzcuNjU3OTQgaCA1Ny4yNjMyMyBMIDI1My45Mzg4MSwxMTEuMDAyOTUgMTUyLjg1MzU0LDc2Ljg4NzQzMSBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzJiOGU5MycgZD0nTSAxODAuMjg1ODksMTc3LjY1Nzk0IEggMjkwLjkxOTc4IEwgMjUzLjkzODgxLDExMS4wMDI5NSBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzMxOWZhNScgZD0nbSAyNTMuOTM4ODEsMTExLjAwMjk1IDM2Ljk4MDk3LDY2LjY1NDk5IGggNy43ODk5NCBMIDMyMi4zODA0LDU5LjQzMTQ3NCBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzJmOTY5YycgZD0nbSAyOTguNzA5NzIsMTc3LjY1Nzk0IGggNTMuMTUyNDYgbCA2OS43MDcyLC0xMy4zODc1IFYgMTUxLjA4MTA4IEwgMzIyLjM4MDQsNTkuNDMxNDc0IFonLz48cGF0aCBzdHlsZT0nZmlsbDojMjg4NDg5JyBkPSdtIDM1MS44NjIxOCwxNzcuNjU3OTQgNjkuNzA3MiwtMTMuMzg3NSAtMC4wMTgsMTMuMjQwODEgeicvPjxwYXRoIHN0eWxlPSdmaWxsOiMyZTlkYTEnIGQ9J20gNDIxLjU2OTM4LDE1MS4wODEwOCAtMC4wMTgsLTEyOC44ODAyMzIgSCAzNTIuNzAwMjIgTCAzMjIuMzgwNCw1OS40MzE0NzQgWicvPjxwYXRoIHN0eWxlPSdmaWxsOiMzNGFjYWYnIGQ9J00gMzUyLjcwMDIyLDIyLjIwMDg0OCBIIDI1Ny40MzMzNyBMIDMyMi4zODA0LDU5LjQzMTQ3NCBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzM0YWFhZCcgZD0nTSAyNTcuNDMzMzcsMjIuMjAwODQ4IDMyMi4zODA0LDU5LjQzMTQ3NCAyNTMuOTM4ODEsMTExLjAwMjk1IDE1Mi44NTM1NCw3Ni44ODc0MzEgMTYwLjQyMTU5LDIyLjE0OTYwNyBaJy8+PHBhdGggc3R5bGU9J2ZpbGw6IzMzYTlhYycgZD0nbSAxNjAuNDIxNTksMjIuMTQ5NjA3IC05OC4yNDAwNjEsLTAuMDA2IDkwLjY3MjAxMSw1NC43NDM4MDkgeicvPjwvZz48L3N2Zz4K)">
+      <div class="block">
+        <span class="font-bold text-white text-3xl">Minutes for meeting 2025-01-17</span>
+      </div>
+      <button @click="mobileMenuOpen = !mobileMenuOpen" class="inline-block md:hidden w-8 h-8 bg-gray-200 text-gray-600 p-1">
+        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <nav class="absolute md:relative top-16 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-opacity-30 bg-white shadow-md rounded-lg md:rounded-none md:shadow-none md:bg-transparent p-6 pt-0 md:p-0"
+           :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"
+           @click.away="mobileMenuOpen = false"
+           >
+        <a class="text-indigo-600 hover:underline" href="/">Home</a>
+        <a class="text-gray-600 hover:underline" href="/minutes">Minutes</a>
+        <a class="text-gray-600 hover:underline" href="/seminars">Seminars</a>
+        <a class="text-gray-600 hover:underline" href="#">RSDD 2020</a>
+      </nav>
+    </header>
+
+    <img class="mb-8" src="/index.png" alt="BE-RSE wallpaper">
+    
+    <main class="markdown-content">
+      
+<h1 id="minutes-for-2025-01-17">Minutes for 2025-01-17</h1>
+<h2 id="present">Present</h2>
+<ul>
+<li>James Collier</li>
+<li>Johan Philips</li>
+<li>Alex Botzki</li>
+<li>Jochem Claes</li>
+</ul>
+<h2 id="topics">Topics</h2>
+<h3 id="composition-of-rse-steering-group">Composition of RSE steering group</h3>
+<p><a href="https://researchsoftware.org/council.html">RSE international council</a>
+<a href="https://matrix.to/#/#be-rse_community:gitter.im">matrix channel</a>
+<a href="https://be-rse.org/">website</a>
+Podcast (Peter Schmidt)</p>
+<p>Add/ask Femke De Backere (UGent)
+https://www.linkedin.com/in/femke-de-backere-011b374/</p>
+<p>the people present in the call
+youtube event</p>
+<p>SORSE events (https://sorse.github.io/, have stopped now)</p>
+<p>RSEs in the world
+see website, https://rsecon24.society-rse.org/programme/rse-worldwide/</p>
+<p>charter?
+to be developed in the world</p>
+<p>personal interest:
+Jochem
+have been working for communities in the past</p>
+<p>Microsoft background:
+other funding opportunities could be considered
+or in-kind contributions</p>
+<ul>
+<li>
+<p>Need to publish the feedback from RSDD2024</p>
+</li>
+<li>
+<p>what other initiatives are there?</p>
+<ul>
+<li><a href="https://birdbelgium.com/companies/">Belgium Industrial R&amp;D</a></li>
+<li><a href="https://quantumcircle.eu/">Quantum Circle: Pioneering Quantum Communication</a></li>
+<li><a href="https://lizard.bio/home">Biolizard</a></li>
+<li>a lot of meetups
+<ul>
+<li><a href="https://www.bitsinbio.org/">Bits in bio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="organisation">Organisation</h3>
+<ul>
+<li>
+<p>Are we going to be ad-hoc for now or a VZW?</p>
+<ul>
+<li>for the time being we do ad hoc</li>
+</ul>
+</li>
+<li>
+<p>Who are the organising committee?</p>
+<ul>
+<li>James</li>
+<li>Jochem</li>
+<li>Philip</li>
+<li>Alex</li>
+</ul>
+</li>
+</ul>
+<p>GitHub is certainly fine</p>
+<ul>
+<li>nice landing page would be a "must"</li>
+</ul>
+<p>interesting approach by FWO to facilitate community building for Research Data Management -&gt; FRDN</p>
+<p>Co-organisation of Belgium RSE (full org of the community)</p>
+<h3 id="hosting-of-events">Hosting of events</h3>
+<p>new community meeting:
+Johan Philips (KU Leuven) is interested</p>
+<ul>
+<li>
+<p>team at KU Leuven as event organisers</p>
+</li>
+<li>
+<p>https://www.linkedin.com/in/femke-de-backere-011b374/</p>
+</li>
+</ul>
+<p>other ad hoc meeting are of course possible</p>
+<h3 id="fosdem-2025">FOSDEM 2025</h3>
+<ul>
+<li>already in February</li>
+</ul>
+<h3 id="next-committee-meeting">Next committee meeting</h3>
+<ul>
+<li>21 Feb @ 14u James to make cal invite;</li>
+<li>Jochem will reflect on the comminuty building.</li>
+<li>Alex to share results from RSDD2024</li>
+<li>22 @ 9u30 Jan Johan makes cal invite for conference</li>
+</ul>
+
+    </main>
+  </body>
+</html>
